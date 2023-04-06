@@ -7,10 +7,10 @@ const nextConfig = {
 
     config.module.rules.push({
       test: /.*\.wasm$/,
-      type: 'asset/resource',
+      type: "asset/resource",
       generator: {
-        filename: 'static/wasm/[name].[modulehash][ext]'
-      }
+        filename: "static/wasm/[name].[contenthash][ext]",
+      },
     })
 
     return config;

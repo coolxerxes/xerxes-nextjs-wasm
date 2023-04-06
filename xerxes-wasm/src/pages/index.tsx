@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import dynamic from 'next/dynamic';
 import { AddModuleExports } from '../../wasm';
+import DuckAsync from '../components/DuckAsync';
+
 
 // const WasmComponent = dynamic({
 //   loader: async () => {
@@ -28,6 +30,7 @@ export default function Home() {
         <div className={styles.description}>
           My WASM Component:
           {/* <WasmComponent />           */}
+          <DuckAsync />
         </div>
       </main>
     </>
