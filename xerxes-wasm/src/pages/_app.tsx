@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
   // })
 
   useEffect(() => {
-    duckdb.initiali
   }, []);
 
   return (
