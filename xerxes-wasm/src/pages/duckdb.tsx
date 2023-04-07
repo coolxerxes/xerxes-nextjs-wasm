@@ -1,24 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import dynamic from 'next/dynamic';
-import { AddModuleExports } from '../../wasm';
 import DuckAsync from '../components/DuckAsync';
-import Link from 'next/link';
-
-
-// const WasmComponent = dynamic({
-//   loader: async () => {
-//     const exports = (await import('../../add.wasm')) as AddModuleExports;
-//     const { add_one: addOne } = exports;
-//     return () => <div>{addOne(2)}</div>
-//   }
-// })
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Duckdb() {
   return (
     <>
       <Head>
@@ -28,8 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Link href='/duckdb'><button>Duckdb</button></Link>
-        <Link href='/map'><button>Map</button></Link>
+        <div className={styles.description}>
+          My WASM Component:
+          {/* <WasmComponent />           */}
+          <DuckAsync />
+        </div>
       </main>
     </>
   )

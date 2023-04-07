@@ -1,5 +1,6 @@
 // import { WEBPACK_BUNDLES, setup } from '@/components/DuckAsync'
 import '@/styles/globals.css'
+import '@/styles/map.css'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 // import {
