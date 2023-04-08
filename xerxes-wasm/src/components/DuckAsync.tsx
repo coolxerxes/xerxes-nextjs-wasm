@@ -1,9 +1,8 @@
 import * as duckdb from "@duckdb/duckdb-wasm";
-import duckdb_wasm from "@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm";
-import duckdb_wasm_eh from "@duckdb/duckdb-wasm/dist/duckdb-eh.wasm";
+const duckdb_wasm = require("@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm");
+const duckdb_wasm_eh = require("@duckdb/duckdb-wasm/dist/duckdb-eh.wasm");
+const shell_wasm = require('@duckdb/duckdb-wasm-shell/dist/shell_bg.wasm');
 
-
-import shell_wasm from '@duckdb/duckdb-wasm-shell/dist/shell_bg.wasm';
 import React from "react";
 import styled from 'styled-components';
 import "xterm/css/xterm.css";
